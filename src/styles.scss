@@ -1,0 +1,340 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Lato, "Helvetica Neue", sans-serif; }
+
+// inner page
+
+.nomat{
+    .mat-form-field-infix{
+        border: 1px solid #ddd;
+        padding: 10px;
+        padding-bottom: 12px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .mat-form-field-appearance-legacy .mat-form-field-label{
+        top: 1.68125em;
+        background: white;
+        display: inline-block !important;
+        width: auto !important;
+        left: 10px;
+        padding: 0 5px;
+    }
+
+    .mat-form-field-underline{
+        position: absolute;
+        width: 95%;
+        pointer-events: none;
+        transform: scaleY(1.0001);
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        height: 0;
+    }
+
+    .mat-select-value, input.mat-input-element{
+        padding-top: 4px;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active  {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+    }
+}
+
+.top-slash{
+    &::before{
+        content: "";
+        width: 100%;
+        height: 170px;
+        position: absolute;
+        top: 64px;
+        left: 0px;
+        background-color: #3F51B5;
+    }
+}
+
+.top-tit{
+    font-weight: 400;
+    // font-family: serif;
+    font-size: 30px;
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.convert-link-div{
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    float: left;
+    width: 100%;
+    margin-top: 20px !important;
+
+    mat-card{
+        height: 230px;
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-family: Lato, "Helvetica Neue", sans-serif;
+
+        &:hover{
+            button{
+                background-color: #3F51B5;
+                color: white;
+                border-color: #3F51B5;
+                transition: all 0.5s;
+            }
+        }
+
+        img{
+            margin-bottom: 50px;
+            width: 75px;
+            margin: 0 auto;
+        }
+
+        a{
+            font-size: 20px;
+            font-weight: 400;
+            color: #000;
+            text-decoration: none;
+        }
+
+        button{
+            border: 1px solid #000;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border-radius: 50%;
+            margin: 0 auto;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+    }
+}
+
+.unit-type{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    mat-label{
+        margin-bottom: 10px;
+    }
+
+    .mat-button-toggle{
+        min-width: 140px;
+    }
+
+    .mat-button-toggle-checked{
+        background-color: #3f51b5;
+        color: white !important;
+    }
+}
+
+.pill-div{
+    padding: 30px 20px 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 2rem 0 rgba(136,152,170,.15);
+    background-color: white;
+    min-width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+}
+
+.decor-bot{
+    border: 8px solid #f4f6f6;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 51px;
+    height: 51px;
+    margin: 0 auto;
+    border-radius: 50%;
+    bottom: -49px;
+    z-index: 9;
+}
+.decor{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(0,0,0,.02);
+    img{
+        width: 50px;
+        border-radius: 50%;
+    }
+}
+
+.bottom-results{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .mat-form-field-appearance-legacy .mat-form-field-label{
+        background-color: #FAFAFA;
+    }
+
+    .mat-input-element:disabled{
+        color: #000;
+    }
+    
+    .mat-form-field-appearance-legacy.mat-form-field-disabled .mat-form-field-underline{
+        background-image: none;
+    }
+
+    .mat-form-field-wrapper{
+        padding-bottom: 0px;
+    }
+
+    .mat-form-field-infix{
+        border: 1px dotted #ddd;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+.smwidth{
+    width: 110px;
+}
+
+.link-cards{
+    margin: 0 10px;
+}
+
+.arlink{
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.5s;
+    display: inline-block;
+    margin-bottom: 20px;
+
+    &:hover{
+        color: #3F51B5;
+        transition: all 0.5s;
+    }
+    mat-icon{
+        position: relative;
+        top: 6px;
+    }
+}
+
+.bg-badge{
+    padding: 10px;
+    min-width: 100px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    border: 0px solid;
+    text-align: center;
+}
+
+.bg-correct{
+    background-color: rgb(196, 247, 196);
+    border-color: rgb(14, 165, 14);
+    color: rgb(14, 165, 14);
+}
+
+.bg-invalid{
+    background-color: rgb(255, 226, 214);
+    border-color: rgb(255, 133, 85);
+    color: rgb(255, 133, 85);
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #dee2e6;
+    color: #8898aa;
+    background-color: #f6f9fc;
+    font-size: 12px;
+}
+.table td, .table th {
+    padding: 1rem;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+th {
+    text-align: inherit;
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.cus-card{
+    margin-bottom: 30px;
+    border: 0;
+    box-shadow: 0 0 2rem 0 rgba(136,152,170,.15);
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+
+    .cus-card-header{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1{
+            margin:0px;
+        }
+    }
+
+    .mat-form-field-wrapper{
+        padding-bottom: 0px !important;
+    }
+
+    .mat-form-field-appearance-legacy .mat-form-field-underline{
+        bottom: 0px;
+    }
+}
+
+.table .bg-badge{
+    padding: 7px;
+    font-size: 14px;
+    min-width: 70px;
+}
