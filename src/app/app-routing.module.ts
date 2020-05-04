@@ -1,6 +1,6 @@
-import { UnitConversionComponent } from './measures/unit-conversion/unit-conversion.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { UnitConversionComponent } from './unit-conversion/unit-conversion.component';
 
 const routes: Routes = [
   { path: '', component: UnitConversionComponent },

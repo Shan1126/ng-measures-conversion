@@ -1,4 +1,3 @@
-import { UnitConversionComponent } from './measures/unit-conversion/unit-conversion.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -8,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutComponent } from './layout/layout.component';
 import { MaterialModule } from './material-module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UnitConversionComponent } from './unit-conversion/unit-conversion.component';
 
 @NgModule({
   declarations: [
